@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+:root{
+    --MainFont: "Figtree", sans-serif;
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: var(--MainFont);
+    background-color: var(--Yellow);
+}
+
+main{
+    margin: 20rem auto;
+    padding: 2rem;
+    background-color: var(--White);
+    max-width: 38.2rem;
+    border: var(--Black) solid 1px;
+    border-radius: 1.5rem;
+    box-shadow: 7px 10px;
+}
+
+img{
+    border-radius: 1.5rem;
+    max-width: 100%;
+}
+
+p{
+    font-weight: 600;
+}
+
+.button{
+    background-color: var(--Yellow);
+    padding: .8rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.content__text{
+    color: gray;
+}
+
+.avatar{
+    display: flex;
+}
+
+.avatar__img{
+    width: 10%;    
+    height: 10%;
+    margin-top: .8rem;
+    margin-right: 1rem;
+}
+
+.avatar__name{
+    font-weight: 800;
+}
+
+.attribution{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    padding: 1rem;
+}
